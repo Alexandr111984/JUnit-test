@@ -13,7 +13,7 @@ import org.example.Calculator;
 class CalculatorTest {
 
     @org.junit.jupiter.api.Test
-    public void positiveTestAll() {
+    public void positiveTest() {
         Calculator calculator = new Calculator();
         Assertions.assertEquals(4, calculator.plus.apply(2, 2));
         Assertions.assertEquals(6, calculator.minus.apply(8, 2));
@@ -21,7 +21,7 @@ class CalculatorTest {
     }
 
     @org.junit.jupiter.api.Test
-    public void negativeTestAll() {
+    public void negativeTest() {
         Calculator calculator = new Calculator();
         Assertions.assertNotEquals(5, calculator.plus.apply(2, 2));
         Assertions.assertNotEquals(9, calculator.minus.apply(8, 2));
